@@ -11,6 +11,14 @@ module.exports = {
         title: "AWS",
         children: CONST.AWS,
       },
+      {
+        title: "Cloud",
+        children: CONST.CLOUD,
+      },
+      {
+        title: "Network",
+        children: CONST.NETWORK,
+      },
     ],
   },
 };
