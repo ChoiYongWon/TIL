@@ -16,6 +16,10 @@ module.exports = {
         children: CONST.CLOUD,
       },
       {
+        title: "Git",
+        children: CONST.GIT,
+      },
+      {
         title: "Network",
         children: CONST.NETWORK,
       },
