@@ -1,0 +1,23 @@
+{
+  "name": "til",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChoiYongWon/TIL.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChoiYongWon/TIL/issues"
+  },
+  "homepage": "https://github.com/ChoiYongWon/TIL#readme",
+  "devDependencies": {
+    "vuepress": "^1.9.8"
+  }
+}
