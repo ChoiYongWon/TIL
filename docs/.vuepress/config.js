@@ -1,8 +1,8 @@
 const CONST = require("./const");
 
 module.exports = {
-  title: "ChoiYongWon's TIL",
-  description: "ChoiYongWon의 Today I Learned",
+  title: "Today ChoiYongWon Learned",
+  description: "Today ChoiYongWon Learned",
   // base: "/TIL/",
   themeConfig: {
     nav: [{ text: "Github", link: "https://github.com/ChoiYongWon" }],
