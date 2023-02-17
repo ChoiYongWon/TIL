@@ -1,23 +1,6 @@
 <template>
-  <div>
-    <div class="titleContainer">
-      <h1>나의 <br />기억 조각들</h1>
-
-      <div class="infoContainer">
-        <div class="name">안녕하세요</div>
-        <ul>
-          <li>
-            <a href="https://milooy.wordpress.com/">Blog</a>
-          </li>
-          <li>
-            <a href="https://github.com/milooy">GitHub</a>
-          </li>
-          <li>
-            <a href="https://soundcloud.com/hellojayjin">SoundCloud</a>
-          </li>
-        </ul>
-      </div>
-    </div>
+  <div class="titleContainer">
+    <h1>오늘 배운건 <br />오늘 정리하자</h1>
   </div>
 </template>
 
@@ -26,9 +9,6 @@
 <style>
 @import "https://fonts.googleapis.com/css?family=Gugi";
 
-.infoContainer {
-  text-align: center;
-}
 h1 {
   font-family: "Gugi", cursive;
   font-weight: 500;
@@ -36,10 +16,7 @@ h1 {
   word-break: keep-all;
   font-size: 5rem;
 }
-.name {
-  font-weight: 900;
-  font-size: 2rem;
-}
+
 ul {
   list-style: none;
   line-height: 1.5rem;
@@ -48,10 +25,6 @@ ul {
 @media (max-width: 550px) {
   h1 {
     font-size: 4.4rem;
-  }
-
-  .name {
-    font-size: 1.7rem;
   }
 }
 
