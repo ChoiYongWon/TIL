@@ -10,8 +10,8 @@
       붕 떠있었던 개념들을 지식 조각들을 조립하는 과정을 통해 정립할 수 있다.<br />
     </p>
     <div>
-      <a href="#" class="tag">#다들</a>
-      <a href="#" class="tag">#화이팅</a>
+      <a href="#" class="tag">#조립중...</a>
+      <a href="#" class="tag">#😩</a>
     </div>
   </div>
 </template>
@@ -35,7 +35,7 @@ ul {
 }
 
 .tag {
-  margin-right: 0.5rem;
+  margin-right: 0.3rem;
 }
 
 @media (max-width: 550px) {
