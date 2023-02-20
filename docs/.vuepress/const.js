@@ -22,3 +22,5 @@ exports.CLOUD = ["cloud/클라우드 환경은 어떻게 이루어져 있을까"
 exports.GIT = ["git/폴더 및 파일 대소문자 변경 인식 설정"];
 
 exports.NETWORK = ["network/TCP-IP vs OSI 7계층"];
+
+exports.SECURITY = ["security/ECC의 등장 배경"];

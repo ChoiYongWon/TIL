@@ -23,6 +23,10 @@ module.exports = {
         title: "Network",
         children: CONST.NETWORK,
       },
+      {
+        title: "Security",
+        children: CONST.SECURITY,
+      },
     ],
   },
 };
