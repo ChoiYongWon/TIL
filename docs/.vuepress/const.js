@@ -24,6 +24,7 @@ exports.GIT = ["git/폴더 및 파일 대소문자 변경 인식 설정"];
 exports.NETWORK = [
   "network/TCP-IP vs OSI 7계층",
   "network/DNS Record A vs CNAME",
+  "network/DNS CNAME Record 흐름",
 ];
 
 exports.SECURITY = ["security/ECC의 등장 배경"];
