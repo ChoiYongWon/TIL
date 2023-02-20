@@ -9,8 +9,8 @@ key 길이도 적게 생성되는 환경을 발견했다.
 
 이 환경을 기반으로 탄생한 암호 알고리즘이 `ECC (Elliptic Curve Cryptography)` 이다.
 
-RSA 알고리즘 key 길이가 1024bit이라 할때,
-ECC 알고리즘으로는 단순히 160bit의 key 길이로 RSA와 동등한 보안 강도를 갖는다.
+RSA 알고리즘 key 길이가 `1024bit`이라 할때,
+ECC 알고리즘으로는 단순히 `160bit`의 key 길이로 RSA와 동등한 보안 강도를 갖는다.
 
 즉, key 길이가 짧으므로 연산속도도 빨라, capacity가 적은 소형화 기기에서 적용하기에 적합하다.
 
