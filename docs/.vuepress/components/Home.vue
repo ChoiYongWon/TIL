@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="titleContainer">
+    <div>
       <h1>조립해가는 <br />지식 조각들</h1>
     </div>
     <h2>소개</h2>
