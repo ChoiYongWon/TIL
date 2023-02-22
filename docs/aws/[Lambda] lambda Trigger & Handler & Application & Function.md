@@ -68,3 +68,7 @@ Serverless Framework를 사용하면 개발자는 보다 더 서비스 개발에
 ## Lambda 함수
 
 함수는 Lambda에서 코드를 실행하기 위해 호출할 수 있는 리소스이다. 함수에는 사용자가 함수에 전달하거나 다른 AWS 서비스가 함수에 보내는 이벤트를 처리하는 코드가 있다.
+
+## Reference
+
+- [https://docs.aws.amazon.com/ko_kr/lambda/latest/dg/welcome.html](https://docs.aws.amazon.com/ko_kr/lambda/latest/dg/welcome.html)
