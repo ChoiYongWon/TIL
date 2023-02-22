@@ -3,7 +3,7 @@ exports.AWS = [
   "aws/[Global] Edge Location",
   "aws/[IAM] user vs role",
   "aws/[IAM] role 이란",
-  "aws/[Lambda] lambda Trigger & Handler & Application",
+  "aws/[Lambda] lambda Trigger & Handler & Application & Function",
   "aws/[Lambda] lambda 특징",
   "aws/[S3] S3 스토리지 클래스",
   "aws/[S3] S3의 Location",
