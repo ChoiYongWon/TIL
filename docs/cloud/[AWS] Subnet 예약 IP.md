@@ -1,4 +1,4 @@
-# [VPC] Subnet 예약 IP
+# [AWS] Subnet 예약 IP
 
 각 서브넷 CIDR 블록에서 처음 4개의 IP 주소와 마지막 IP 주소는 사용할 수 없으며 인스턴스에 배정할 수 없다.
 

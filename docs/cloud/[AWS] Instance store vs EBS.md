@@ -1,4 +1,4 @@
-# [EC2] Instance store vs EBS
+# [AWS] Instance store vs EBS
 
 ## Instance Store
 

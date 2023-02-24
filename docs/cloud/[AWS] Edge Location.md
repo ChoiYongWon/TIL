@@ -1,4 +1,4 @@
-# [Global] Edge Location
+# [AWS] Edge Location
 
 > 엣지 로케이션은 전 세계의 AWS의 CDN 서버가 있는 위치이다.
 

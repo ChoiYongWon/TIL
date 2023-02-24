@@ -1,4 +1,4 @@
-# [VPC] VPC Peering
+# [AWS] VPC Peering
 
 > VPC 끼리 연결해주는 서비스
 

@@ -1,4 +1,4 @@
-# [VPC] NAT Gateway의 역할
+# [AWS] NAT Gateway의 역할
 
 목적은 하나밖에 없다.  
 Private Subnet에서 `OUTBOUND`로의 요청을 필요로 할때.

@@ -1,4 +1,4 @@
-# [IAM] role 이란
+# [AWS] role 이란
 
 user, group, role
 

@@ -1,4 +1,4 @@
-# [VPC] public subnet vs private subnet
+# [AWS] public subnet vs private subnet
 
 서브넷은 생성하면 처음엔 무조건 `private subnet`이다.
 `public subnet`과 `private subnet`을 구분하는 기준은 `인터넷 게이트웨이`가 연결 되어있냐 없냐로 구분한다.

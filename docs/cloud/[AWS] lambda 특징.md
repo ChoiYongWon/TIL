@@ -1,4 +1,4 @@
-# [Lambda] lambda 특징
+# [AWS] lambda 특징
 
 > Serverless 구조로 제공하는 서비스
 

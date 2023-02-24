@@ -1,4 +1,4 @@
-## [VPC] Transit Gateway
+## [AWS] Transit Gateway
 
 > VPC Peering의 전이적 피어링 문제를 고안해서 만들어진 서비스  
 > 여러 VPC나 온프레미스들을 연결해주는 역할

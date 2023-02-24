@@ -1,4 +1,4 @@
-# [Lambda] lambda Trigger & Handler & Application
+# [AWS] lambda Trigger & Handler & Application
 
 ## 전체적인 틀
 

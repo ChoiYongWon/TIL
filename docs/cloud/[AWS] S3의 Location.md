@@ -1,4 +1,4 @@
-# [S3] S3의 Location
+# [AWS] S3의 Location
 
 ## 위치
 

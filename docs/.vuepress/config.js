@@ -8,10 +8,6 @@ module.exports = {
     nav: [{ text: "Github", link: "https://github.com/ChoiYongWon" }],
     sidebar: [
       {
-        title: "AWS",
-        children: CONST.AWS,
-      },
-      {
         title: "Cloud",
         children: CONST.CLOUD,
       },

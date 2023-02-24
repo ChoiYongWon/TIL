@@ -1,4 +1,4 @@
-# [VPC] VPC Endpoint
+# [AWS] VPC Endpoint
 
 VPC 내부에 존재하는 어플리케이션이 S3나 DynamoDB에 연결을 시도한다고 가정해보자,
 S3, DynamoDB는 특정 vpc에 국한 되어있는 노드가 아니기 때문에 `리전`안에 있다.
