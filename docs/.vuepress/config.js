@@ -16,6 +16,10 @@ module.exports = {
         children: CONST.GIT,
       },
       {
+        title: "Issue",
+        children: CONST.ISSUE,
+      },
+      {
         title: "Network",
         children: CONST.NETWORK,
       },

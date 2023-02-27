@@ -24,6 +24,8 @@ exports.CLOUD = [
 
 exports.GIT = ["git/폴더 및 파일 대소문자 변경 인식 설정"];
 
+exports.ISSUE = ["issue/연구실 서버 구축중 네트워크 Issue"];
+
 exports.NETWORK = [
   "network/TCP-IP vs OSI 7계층",
   "network/DNS Record A vs CNAME",
