@@ -55,7 +55,7 @@ ul {
 .info {
   font-weight: 400;
   font-style: oblique;
-  text-decoration: underline;
+  /* text-decoration: underline; */
   text-decoration-color: #2c3e50;
   margin: 2rem 0;
 }
