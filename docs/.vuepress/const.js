@@ -22,7 +22,10 @@ exports.CLOUD = [
   "cloud/[AWS] 가용영역과 리전",
 ];
 
-exports.GIT = ["git/폴더 및 파일 대소문자 변경 인식 설정"];
+exports.GIT = [
+  "git/폴더 및 파일 대소문자 변경 인식 설정",
+  "git/[git-scm] Git의 기초",
+];
 
 exports.ISSUE = ["issue/연구실 서버 구축중 네트워크 Issue"];
 
