@@ -1,4 +1,4 @@
-exports.TIL = ["til/2023-05-18"];
+exports.TIL = ["TIL/2023-05-18"];
 
 exports.CLOUD = [
   "cloud/클라우드 환경은 어떻게 이루어져 있을까",
