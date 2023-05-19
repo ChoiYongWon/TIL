@@ -44,7 +44,6 @@ h1 {
 }
 
 ul {
-  list-style: none;
   line-height: 2rem;
 }
 
