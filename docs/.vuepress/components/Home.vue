@@ -59,6 +59,10 @@ ul {
   margin: 2rem 0;
 }
 
+code {
+  border-radius: 4px;
+}
+
 @media (max-width: 550px) {
   h1 {
     font-size: 4.4rem;
