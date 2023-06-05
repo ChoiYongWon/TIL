@@ -1,10 +1,10 @@
-<!-- .vuepress/components/TagList.vue -->
+<!-- .vuepress/components/TagList -->
 <template lang="html">
   <div>
     <span v-for="tag in Object.keys(tags)">
       <h2 :id="tag">
         <router-link
-          :to="{ path: `/tags.html#${tag}` }"
+          :to="{ path: `/tag/#${tag}` }"
           class="header-anchor"
           aria-hidden="true"
           >#</router-link
@@ -25,6 +25,7 @@ export default {
   computed: {
     tags() {
       let tags = {};
+      // 전체 게시글에서 태그들을 가져옵니다.
       for (let page of this.$site.pages) {
         for (let index in page.frontmatter.tags) {
           const tag = page.frontmatter.tags[index];

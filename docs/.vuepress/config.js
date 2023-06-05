@@ -5,7 +5,10 @@ module.exports = {
   description: "Today ChoiYongWon Learned",
   // base: "/TIL/",
   themeConfig: {
-    nav: [{ text: "Github", link: "https://github.com/ChoiYongWon" }],
+    nav: [
+      { text: "Github", link: "https://github.com/ChoiYongWon" },
+      { text: "Tags", link: <TagList /> },
+    ],
     sidebar: [
       {
         title: "TIL",
