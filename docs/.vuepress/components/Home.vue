@@ -60,7 +60,7 @@ ul {
 }
 
 code {
-  border-radius: 4px;
+  border-radius: 4px !important;
 }
 
 @media (max-width: 550px) {

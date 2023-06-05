@@ -11,26 +11,26 @@ module.exports = {
         title: "TIL",
         children: CONST.TIL,
       },
-      {
-        title: "Cloud",
-        children: CONST.CLOUD,
-      },
-      {
-        title: "Git",
-        children: CONST.GIT,
-      },
-      {
-        title: "Issue",
-        children: CONST.ISSUE,
-      },
-      {
-        title: "Network",
-        children: CONST.NETWORK,
-      },
-      {
-        title: "Security",
-        children: CONST.SECURITY,
-      },
+      // {
+      //   title: "Cloud",
+      //   children: CONST.CLOUD,
+      // },
+      // {
+      //   title: "Git",
+      //   children: CONST.GIT,
+      // },
+      // {
+      //   title: "Issue",
+      //   children: CONST.ISSUE,
+      // },
+      // {
+      //   title: "Network",
+      //   children: CONST.NETWORK,
+      // },
+      // {
+      //   title: "Security",
+      //   children: CONST.SECURITY,
+      // },
     ],
   },
 };
