@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/ChoiYongWon/TIL#readme",
   "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.9.9",
+    "@vuepress/plugin-google-analytics": "^1.9.9",
     "@vuepress/plugin-last-updated": "^1.9.9",
     "vuepress": "^1.9.8",
     "vuepress-plugin-code-copy": "^1.0.6"

@@ -4,7 +4,19 @@ module.exports = {
   title: "Today ChoiYongWon Learned",
   description: "Today ChoiYongWon Learned",
   // base: "/TIL/",
+  plugins: [
+    ["vuepress-plugin-code-copy"],
+    ["@vuepress/last-updated"],
+    ["@vuepress/back-to-top"],
+    // [
+    //   "@vuepress/google-analytics",
+    //   {
+    //     ga: // UA-00000000-0
+    //   }
+    // ],
+  ],
   themeConfig: {
+    lastUpdated: "마지막 수정일",
     nav: [
       { text: "Github", link: "https://github.com/ChoiYongWon" },
       { text: "Tags", link: "/tag/" },
