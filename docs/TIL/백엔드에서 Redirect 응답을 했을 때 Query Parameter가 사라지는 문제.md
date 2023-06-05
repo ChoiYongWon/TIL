@@ -1,12 +1,10 @@
 ---
-tags: ["aws", "amplify", "query", "parameter"]
+tags: ["aws amplify"]
 ---
 
-# 2023-06-04
+# 백엔드에서 Redirect 응답을 했을 때 Query Parameter가 사라지는 문제
 
-## 백엔드에서 Redirect 응답을 했을 때 Query Parameter가 사라지는 문제
-
-### 시나리오
+## 시나리오
 
 프론트는 React를 사용했고 AWS Amplify에 배포했고  
 백엔드는 NestJs를 사용했고 AWS ECS를 통해 배포했다.
@@ -19,7 +17,7 @@ tags: ["aws", "amplify", "query", "parameter"]
    > ex) front.com/auth/kakao/redirect?access_token=<토큰값>
 4. 프론트는 해당 값을 파싱하여 LocalStorage에 저장한다.
 
-### 문제점
+## 문제점
 
 시나리오 3번 과정에서 백엔드에서 프론트로 토큰값을 붙여서 Redirect 시켜주는 과정에서 프론트에서 Query parameter가 없어지는 문제가 발생하였다.
 
@@ -27,17 +25,17 @@ tags: ["aws", "amplify", "query", "parameter"]
 
 마지막에서 두번째 줄에서 성공적으로 access_token이 들어오나 밑에서 다시 Query parameter가 없어진 상태로 리디렉션이 일어나는걸 볼 수 있다.
 
-### 삽질
+## 삽질
 
 원인 파악을 위해 크롬 개발자 도구에서 네트워크 탭을 통해 거쳐온 URL들을 알아볼 수 있었다.  
 실제로 토큰값을 포함한채로 Redirect `front.com/auth/kakao/redirect?access_token=<토큰값>` 되는데 다음 과정에서 `front.com/auth/kakao/redirect` 로 토큰값이 사라진채로 Redirect 되는걸 볼 수 있었고 또한, 로컬에선 잘 돌아가다가 배포 환경에서만 Query parameter가 사라졌다. 다음과 같이 원인이 될만한 요소를 나열해 보았다.
 
-**1. React 문제인가?**
+### 1. React 문제인가?
 
 처음엔 React 문제인가 싶어서 자료를 찾아봤는데 해당 이슈가 발생한 사람이 별로 없었다.
 React에서 문제가 발생 해봤자 사용하고 있는 react-router-dom 라이브러리에서 발생하겠다 싶어 해당 라이브러리를 비활성화 시키고 배포해보았다. 직접 `front.com/auth/kakao/redirect?access_token=<토큰값>`에 접속해봤을때 토큰값이 사라진걸 보아 React 문제는 아니란게 확신이 들었다.
 
-**2. Amplify 문제인가?**
+### 2. Amplify 문제인가?
 
 가장 의심스러웠지만 가장 아니였으면 하는 문제였다. 로컬 환경과 배포 환경에서의 다른점은 Amplify 밖에 없었기 때문에 가장 의심스러웠다. 자료를 찾아보니 나와 정확히 일치하는 이슈를 찾아볼 수 있었다.
 [Pass url params in rewrites and redirects #97](https://github.com/aws-amplify/amplify-hosting/issues/97)  
@@ -56,7 +54,7 @@ Amplify는 다음과 같은 예외 사항을 제외하고는 Query parameter를 
 - 기존 주소에서 query string이 특정 값으로 지정될 때, amplify는 특정 query parameter만 포워딩 한다.
 - 소스 주소가 일치하는 대상 주소에 query parameter가 포함될 때, 즉 사용자가 명시적으로 query string을 작성했을 때 query parameter는 포워딩 되지 않는다.
 
-### 해결 방법
+## 해결 방법
 
 기존 Amplify 다시 쓰기 및 리디렉션 설정은 다음과 같이 되어있었다.
 
