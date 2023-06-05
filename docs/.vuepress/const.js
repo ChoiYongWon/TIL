@@ -1,5 +1,5 @@
 exports.TIL = [
-  "TIL/redirect시 query parameter가 사라지는 문제.md",
+  "TIL/redirect시 query parameter가 사라지는 문제",
   // "TIL/2023-05-18",
   // "TIL/2023-05-19",
   // "TIL/2023-05-23",

@@ -2,7 +2,7 @@
 tags: ["aws amplify"]
 ---
 
-# 백엔드에서 Redirect 응답을 했을 때 Query Parameter가 사라지는 문제
+# redirect시 query parameter가 사라지는 문제
 
 ## 시나리오
 
