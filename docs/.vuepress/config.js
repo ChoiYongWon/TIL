@@ -7,7 +7,7 @@ module.exports = {
   themeConfig: {
     nav: [
       { text: "Github", link: "https://github.com/ChoiYongWon" },
-      { text: "Tags", link: <TagList /> },
+      { text: "Tags", link: "/tag/" },
     ],
     sidebar: [
       {
