@@ -1,5 +1,6 @@
 ---
 tags: ["aws amplify"]
+date: 2023-06-06
 ---
 
 # redirect시 query parameter가 사라지는 문제

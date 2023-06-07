@@ -16,7 +16,7 @@ module.exports = {
     // ],
   ],
   themeConfig: {
-    lastUpdated: "마지막 수정일",
+    lastUpdated: "마지막수정일",
     nav: [
       { text: "Github", link: "https://github.com/ChoiYongWon" },
       { text: "Tags", link: "/tag/" },
