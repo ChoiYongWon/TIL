@@ -9,16 +9,12 @@
       수 있습니다."
     </div>
     <p>
-      메모는 메모하는 짧은 순간만을 위한 것이 아니다.
-      <br />
-      메모는 다시 읽어보고 활용하기 위한 것이다.
-      <br />
-      <span style="font-style: italic">- 사카토 켄지</span>
+      기억하고 활용하기 위해 기록합니다.
       <br />
     </p>
 
     <div>
-      <a href="#" class="tag">#메모중..</a>
+      <a href="#" class="tag">#기록중..</a>
       <a href="#" class="tag">#✍️</a>
     </div>
 
