@@ -1,8 +1,8 @@
 const CONST = require("./const");
 
 module.exports = {
-  title: "Today ChoiYongWon Learned",
-  description: "Today ChoiYongWon Learned",
+  title: "Today rtolzo Learned",
+  description: "Today rtolzo Learned",
   // base: "/TIL/",
   plugins: [
     ["vuepress-plugin-code-copy"],
