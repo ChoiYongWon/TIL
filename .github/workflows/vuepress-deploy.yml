@@ -14,4 +14,4 @@ jobs:
           TARGET_BRANCH: gh-pages
           BUILD_SCRIPT: yarn && yarn docs:build
           BUILD_DIR: docs/.vuepress/dist
-          CNAME: til.choiyongwon.me
+          CNAME: til.rtolzo.dev
