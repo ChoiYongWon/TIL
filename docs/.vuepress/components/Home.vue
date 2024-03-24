@@ -48,6 +48,10 @@ ul {
   margin-right: 0.3rem;
 }
 
+img {
+  border-radius: 6px;
+}
+
 .info {
   font-weight: 400;
   font-style: oblique;
