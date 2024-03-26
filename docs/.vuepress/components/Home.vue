@@ -64,6 +64,23 @@ code {
   border-radius: 4px !important;
 }
 
+img > .caption {
+  font-size: 12px;
+}
+
+.img-container {
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+.caption {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+}
+
 @media (max-width: 550px) {
   h1 {
     font-size: 4.4rem;
