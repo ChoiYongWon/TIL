@@ -71,8 +71,7 @@ img > .caption {
 .img-container {
   width: 100%;
   display: inline-block;
-  margin-bottom: 16px;
-  margin-top: 16px;
+  margin: 32px auto;
 }
 
 .caption {
