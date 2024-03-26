@@ -77,6 +77,7 @@ img > .caption {
 .caption {
   display: block;
   text-align: center;
+  margin-top: 4px;
   font-size: 14px;
 }
 
