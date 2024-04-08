@@ -67,6 +67,11 @@ img > .caption {
   margin: 32px auto;
 }
 
+.iframe {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}
+
 .caption {
   display: block;
   text-align: center;
