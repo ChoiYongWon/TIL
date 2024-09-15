@@ -89,8 +89,14 @@ img > .caption {
 
 .task-list-item-checkbox:disabled {
   opacity: 0.7;
+  pointer-events: none;
 }
 
+/* Ensure the checkbox is visible when disabled and checked */
+.task-list-item-checkbox:disabled:checked {
+  background-color: #3EAF7C;
+  opacity: 0.7;
+}
 
 @media (max-width: 550px) {
   h1 {
