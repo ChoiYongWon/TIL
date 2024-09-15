@@ -15,6 +15,11 @@ module.exports = {
     //   }
     // ],
   ],
+  markdown: {
+    edtendMarkdown: md => {
+      md.use(require('markdown-it-task-lists'))
+    }
+  },
   themeConfig: {
     lastUpdated: "마지막수정일",
     nav: [
