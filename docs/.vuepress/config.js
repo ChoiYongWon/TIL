@@ -1,4 +1,3 @@
-const markdownItTaskLists = require("markdown-it-task-lists");
 const CONST = require("./const");
 
 module.exports = {
@@ -16,7 +15,11 @@ module.exports = {
     //   }
     // ],
   ],
-  markdownItTaskLists,
+  markdown: {
+    extendMarkdown: md => {
+      md.use(require('markdown-it-task-lists'))
+    }
+  },
   themeConfig: {
     lastUpdated: "마지막수정일",
     nav: [
