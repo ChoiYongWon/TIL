@@ -83,6 +83,15 @@ img > .caption {
   list-style-type:none;
 }
 
+.task-list-item-checkbox {
+  accent-color: #3EAF7C;
+}
+
+.task-list-item-checkbox:disabled {
+  opacity: 0.7;
+}
+
+
 @media (max-width: 550px) {
   h1 {
     font-size: 4.4rem;
