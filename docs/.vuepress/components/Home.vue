@@ -79,6 +79,10 @@ img > .caption {
   font-size: 14px;
 }
 
+.contains-task-list LI {
+  list-style-type:none;
+}
+
 @media (max-width: 550px) {
   h1 {
     font-size: 4.4rem;
