@@ -8,3 +8,4 @@
 - [ ] [직렬화(Serialization), 역직렬화(Deserialization) 완벽 이해](https://youtu.be/CNOwy1JHI4k?si=_VBSYuyMtaE6kNlu)
 - [ ] [DB 트랜잭션 격리 수준 제대로 이해하기](https://www.youtube.com/watch?v=sDSU8KrOcxc)
 - [ ] [프론트엔드 개발자 관점으로 바라보는 관심사의 분리와 좋은 폴더 구조 (feat. FSD)](https://velog.io/@teo/separation-of-concerns-of-frontend)
+- [ ] [스토리북 & 자동화 테스트와 함께 하는 컴포넌트 주도 프론트엔드 개발 | 판교 퇴근길 밋업 with 인프런](https://www.youtube.com/watch?v=CBLPEeayqYo)
