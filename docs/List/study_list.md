@@ -7,3 +7,4 @@
 - [ ] [실행 코드로 알아보는 실행컨텍스트 동작 원리](https://youtu.be/pfQfEwnJHRs?si=qLAqOGPKdJmfV5wT)
 - [ ] [직렬화(Serialization), 역직렬화(Deserialization) 완벽 이해](https://youtu.be/CNOwy1JHI4k?si=_VBSYuyMtaE6kNlu)
 - [ ] [DB 트랜잭션 격리 수준 제대로 이해하기](https://www.youtube.com/watch?v=sDSU8KrOcxc)
+- [ ] [프론트엔드 개발자 관점으로 바라보는 관심사의 분리와 좋은 폴더 구조 (feat. FSD)](https://velog.io/@teo/separation-of-concerns-of-frontend)
