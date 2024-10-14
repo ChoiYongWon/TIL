@@ -12,3 +12,4 @@
 - [ ] [스토리북 & 자동화 테스트와 함께 하는 컴포넌트 주도 프론트엔드 개발 | 판교 퇴근길 밋업 with 인프런](https://www.youtube.com/watch?v=CBLPEeayqYo)
 - [ ] [프론트엔드 개발자라면 페이지 전환 정도는 할 수 있어야죠? 못한다고요? 😱](https://velog.io/@k-svelte-master/frontend-page-transition-please)
 - [ ] [팀 리더가 못미더우시다고요?](https://velog.io/@kangciu/%ED%8C%80-%EB%A6%AC%EB%8D%94%EA%B0%80-%EB%AA%BB%EB%AF%B8%EB%8D%94%EC%9A%B0%EC%8B%9C%EB%8B%A4%EA%B3%A0%EC%9A%94)
+- [ ] [\[리액트\] 네이버는 폴더구조를 어떻게 구성 하고있을까](https://joong-sunny.github.io/react/react7/)
