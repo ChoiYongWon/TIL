@@ -14,3 +14,4 @@
 - [ ] [팀 리더가 못미더우시다고요?](https://velog.io/@kangciu/%ED%8C%80-%EB%A6%AC%EB%8D%94%EA%B0%80-%EB%AA%BB%EB%AF%B8%EB%8D%94%EC%9A%B0%EC%8B%9C%EB%8B%A4%EA%B3%A0%EC%9A%94)
 - [ ] [\[리액트\] 네이버는 폴더구조를 어떻게 구성 하고있을까](https://joong-sunny.github.io/react/react7/)
 - [ ] [React Hydration의 내부 동작 원리](https://velog.io/@woogur29/React-Hydration%EC%9D%98-%EB%82%B4%EB%B6%80-%EB%8F%99%EC%9E%91-%EC%9B%90%EB%A6%AC)
+- [ ] [React Context의 내부 동작 원리](https://velog.io/@woogur29/React-Context%EC%9D%98-%EB%82%B4%EB%B6%80-%EB%8F%99%EC%9E%91-%EC%9B%90%EB%A6%AC)
