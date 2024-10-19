@@ -15,3 +15,4 @@
 - [ ] [\[리액트\] 네이버는 폴더구조를 어떻게 구성 하고있을까](https://joong-sunny.github.io/react/react7/)
 - [ ] [React Hydration의 내부 동작 원리](https://velog.io/@woogur29/React-Hydration%EC%9D%98-%EB%82%B4%EB%B6%80-%EB%8F%99%EC%9E%91-%EC%9B%90%EB%A6%AC)
 - [ ] [React Context의 내부 동작 원리](https://velog.io/@woogur29/React-Context%EC%9D%98-%EB%82%B4%EB%B6%80-%EB%8F%99%EC%9E%91-%EC%9B%90%EB%A6%AC)
+- [ ] [Sentry로 우아하게 프론트엔드 에러 추적하기](https://tech.kakaopay.com/post/frontend-sentry-monitoring/)
