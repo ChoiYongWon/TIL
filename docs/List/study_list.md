@@ -17,3 +17,4 @@
 - [ ] [React Context의 내부 동작 원리](https://velog.io/@woogur29/React-Context%EC%9D%98-%EB%82%B4%EB%B6%80-%EB%8F%99%EC%9E%91-%EC%9B%90%EB%A6%AC)
 - [ ] [Sentry로 우아하게 프론트엔드 에러 추적하기](https://tech.kakaopay.com/post/frontend-sentry-monitoring/)
 - [ ] [Sentry를 활용한 에러 모니터링 및 트래킹](https://dabletech.oopy.io/709eed97-cb32-478b-99ba-34724ca86321)
+- [ ] [Sentry를 이용한 에러 추적기, React의 선언적 에러 처리 / if(kakao)2022](https://www.youtube.com/watch?v=012IPbMX_y4)
