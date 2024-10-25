@@ -16,3 +16,4 @@
 - [ ] [Sentry로 우아하게 프론트엔드 에러 추적하기](https://tech.kakaopay.com/post/frontend-sentry-monitoring/)
 - [ ] [Sentry를 활용한 에러 모니터링 및 트래킹](https://dabletech.oopy.io/709eed97-cb32-478b-99ba-34724ca86321)
 - [ ] [Sentry를 이용한 에러 추적기, React의 선언적 에러 처리 / if(kakao)2022](https://www.youtube.com/watch?v=012IPbMX_y4)
+- [ ] [제 사이드 프로젝트 홍보 방법이요? OOO은 필수입니다.](https://velog.io/@khy2106/%EC%82%AC%EC%9D%B4%EB%93%9C-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%99%8D%EB%B3%B4-%EB%B0%A9%EB%B2%95)
