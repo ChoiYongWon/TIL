@@ -18,3 +18,4 @@
 - [ ] [Sentry를 이용한 에러 추적기, React의 선언적 에러 처리 / if(kakao)2022](https://www.youtube.com/watch?v=012IPbMX_y4)
 - [ ] [제 사이드 프로젝트 홍보 방법이요? OOO은 필수입니다.](https://velog.io/@khy2106/%EC%82%AC%EC%9D%B4%EB%93%9C-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%99%8D%EB%B3%B4-%EB%B0%A9%EB%B2%95)
 - [ ] [당신이 퇴근하고 사이드 프로젝트를 못 하는 이유 - OO이 없어서.](https://velog.io/@khy2106/%EB%8B%B9%EC%8B%A0%EC%9D%B4-%ED%87%B4%EA%B7%BC%ED%95%98%EA%B3%A0-%EC%82%AC%EC%9D%B4%EB%93%9C-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EB%A5%BC-%EB%AA%BB-%ED%95%98%EB%8A%94-%EC%9D%B4%EC%9C%A0-OO%EC%9D%B4-%EC%97%86%EC%96%B4%EC%84%9C)
+- [ ] [사람들을 사로잡는 사이드 프로젝트 아이디어를 얻는 방법 - 마인드 편](https://velog.io/@khy2106/%EC%82%AC%EC%9D%B4%EB%93%9C%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%A7%88%EC%9D%B8%EB%93%9C%EC%85%8B)
