@@ -19,3 +19,4 @@
 - [ ] [제 사이드 프로젝트 홍보 방법이요? OOO은 필수입니다.](https://velog.io/@khy2106/%EC%82%AC%EC%9D%B4%EB%93%9C-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%99%8D%EB%B3%B4-%EB%B0%A9%EB%B2%95)
 - [ ] [당신이 퇴근하고 사이드 프로젝트를 못 하는 이유 - OO이 없어서.](https://velog.io/@khy2106/%EB%8B%B9%EC%8B%A0%EC%9D%B4-%ED%87%B4%EA%B7%BC%ED%95%98%EA%B3%A0-%EC%82%AC%EC%9D%B4%EB%93%9C-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EB%A5%BC-%EB%AA%BB-%ED%95%98%EB%8A%94-%EC%9D%B4%EC%9C%A0-OO%EC%9D%B4-%EC%97%86%EC%96%B4%EC%84%9C)
 - [ ] [사람들을 사로잡는 사이드 프로젝트 아이디어를 얻는 방법 - 마인드 편](https://velog.io/@khy2106/%EC%82%AC%EC%9D%B4%EB%93%9C%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%A7%88%EC%9D%B8%EB%93%9C%EC%85%8B)
+- [ ] [\[스위프 후기\] 사용자 천명+해커톤 대상까지! 쓰레기통 찾아주는 Binder](https://velog.io/@horang12/%EC%82%AC%EC%9A%A9%EC%9E%90-1000%EB%AA%85-%EC%8A%A4%EC%9C%84%ED%94%84-%EB%8C%80%EC%83%81%EA%B9%8C%EC%A7%80-%EC%93%B0%EB%A0%88%EA%B8%B0%ED%86%B5%EC%9D%84-%EC%B0%BE%EC%95%84%EC%A3%BC%EB%8A%94-Binder)
