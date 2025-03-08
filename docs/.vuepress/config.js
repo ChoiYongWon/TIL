@@ -1,56 +1,33 @@
-const CONST = require("./const");
+import { defineUserConfig } from "vuepress";
+import { defaultTheme } from "@vuepress/theme-default";
+import { viteBundler } from "@vuepress/bundler-vite";
+import { TIL } from "./const";
+import { getDirname, path } from "vuepress/utils";
+import plugins from "./configs/plugins";
 
-module.exports = {
+const __dirname = import.meta.dirname || getDirname(import.meta.url);
+
+export default defineUserConfig({
   title: "Today rtolzo Learned",
   description: "Today rtolzo Learned",
-  // base: "/TIL/",
-  plugins: [
-    ["vuepress-plugin-code-copy"],
-    ["@vuepress/last-updated"],
-    ["@vuepress/back-to-top"],
-    // [
-    //   "@vuepress/google-analytics",
-    //   {
-    //     ga: // UA-00000000-0
-    //   }
-    // ],
-  ],
-  markdown: {
-    extendMarkdown: md => {
-      md.use(require('markdown-it-task-lists'))
-    }
-  },
-  themeConfig: {
-    lastUpdated: "마지막수정일",
-    nav: [
+  theme: defaultTheme({
+    lastUpdatedText: "마지막 수정일",
+    contributors: false,
+    navbar: [
       { text: "Github", link: "https://github.com/ChoiYongWon" },
-      { text: "Tags", link: "/tag/" },
+      { text: "Tags", link: "/tags/" },
     ],
     sidebar: [
       {
-        title: "TIL",
-        children: CONST.TIL,
+        text: "TIL",
+        children: TIL,
       },
-      // {
-      //   title: "Cloud",
-      //   children: CONST.CLOUD,
-      // },
-      // {
-      //   title: "Git",
-      //   children: CONST.GIT,
-      // },
-      // {
-      //   title: "Issue",
-      //   children: CONST.ISSUE,
-      // },
-      // {
-      //   title: "Network",
-      //   children: CONST.NETWORK,
-      // },
-      // {
-      //   title: "Security",
-      //   children: CONST.SECURITY,
-      // },
     ],
-  },
-};
+    themePlugins: { prismjs: false },
+    alias: {
+      "@theme/Page.vue": path.resolve(__dirname, "./components/Page.vue"),
+    },
+  }),
+  bundler: viteBundler(),
+  plugins,
+});

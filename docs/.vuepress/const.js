@@ -1,4 +1,4 @@
-exports.TIL = [
+export const TIL = [
   "List/study_list",
   "TIL/2024_10",
   "TIL/2024_09",
