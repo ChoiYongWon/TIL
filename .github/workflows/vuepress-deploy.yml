@@ -7,10 +7,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@master
 
-      - name: vuepress-deploy
-        uses: jenkey2011/vuepress-deploy@master
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
           node-version: "18"
+
+      - name: vuepress-deploy
+        uses: jenkey2011/vuepress-deploy@master
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           TARGET_BRANCH: gh-pages
