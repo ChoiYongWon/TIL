@@ -46,4 +46,10 @@ h1 {
   text-decoration-color: var(--vp-c-text);
   margin: 2rem 0;
 }
+
+@media (max-width: 419px) {
+  [vp-content] h1 {
+    font-size: 3.4rem;
+  }
+}
 </style>
