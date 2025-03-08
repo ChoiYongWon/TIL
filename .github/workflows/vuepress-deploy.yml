@@ -31,7 +31,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v4
         with:
-          cname: til.rtolzo.dev
           # deploy to gh-pages branch
           target_branch: gh-pages
           # deploy the default output dir of VuePress
@@ -39,4 +38,3 @@ jobs:
         env:
           # @see https://docs.github.com/en/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          CNAME: til.rtolzo.dev
