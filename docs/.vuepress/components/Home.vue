@@ -16,8 +16,6 @@
     <div>
       <a href="#" class="tag">#기록중..</a>
       <a href="#" class="tag">#✍️</a>
-      <a href="#" class="tag">#현재</a>
-      <a href="#" class="tag">#공사중</a>
     </div>
   </div>
 </template>

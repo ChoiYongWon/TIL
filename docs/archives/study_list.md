@@ -1,3 +1,7 @@
+---
+sidebar: true
+---
+
 # TIL 예정
 
 - [ ] [Nginx IT 비전공자도 쉽게 이해하기](https://www.youtube.com/watch?v=-e7ZuT9pj5s)

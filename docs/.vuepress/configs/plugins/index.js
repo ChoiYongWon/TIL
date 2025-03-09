@@ -6,6 +6,7 @@ import { markdownExtPlugin } from "@vuepress/plugin-markdown-ext";
 import { markdownImagePlugin } from "@vuepress/plugin-markdown-image";
 import { commentPlugin } from "@vuepress/plugin-comment";
 import { blogPlugin } from "@vuepress/plugin-blog";
+import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
 
 const plugins = [
   searchPlugin(),
@@ -92,6 +93,10 @@ const plugins = [
         itemFrontmatter: (name) => ({ title: `Tag ${name}` }),
       },
     ],
+  }),
+  mdEnhancePlugin({
+    // Enable mermaid
+    mermaid: true,
   }),
 ];
 

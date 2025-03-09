@@ -1,7 +1,7 @@
 import { defineUserConfig } from "vuepress";
 import { defaultTheme } from "@vuepress/theme-default";
 import { viteBundler } from "@vuepress/bundler-vite";
-import { TIL } from "./const";
+import { TOPICS } from "./const";
 import { getDirname, path } from "vuepress/utils";
 import plugins from "./configs/plugins";
 
@@ -19,8 +19,10 @@ export default defineUserConfig({
     ],
     sidebar: [
       {
-        text: "TIL",
-        children: TIL,
+        text: "Topics",
+        prefix: "/topics/",
+        link: "/topics/",
+        children: TOPICS,
       },
     ],
     themePlugins: { prismjs: false },
