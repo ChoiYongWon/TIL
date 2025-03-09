@@ -77,7 +77,7 @@ ol {
 }
 
 .article .title {
-  font-size: 1.35rem;
+  font-size: 1.65rem;
   font-weight: 600;
 }
 
