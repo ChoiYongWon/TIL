@@ -11,3 +11,4 @@
 ---
 
 [✍️ rebase시 충돌 시점 분석](/notes/git-rebase-conflict/)
+[✍️ branch에서 특정 commit id가 존재하는지 확인](/notes/git-search-commit-id/)
