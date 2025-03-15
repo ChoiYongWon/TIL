@@ -1,6 +1,7 @@
 ---
 permalink: /notes/git-search-commit-id/
-tags: [git, 작성중]
+tags: [git]
+comment: true
 ---
 
 # branch에서 특정 commit id가 존재하는지 확인

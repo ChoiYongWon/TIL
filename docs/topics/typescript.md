@@ -1,3 +1,7 @@
+---
+comment: true
+---
+
 # Typescript
 
 ### 개념
