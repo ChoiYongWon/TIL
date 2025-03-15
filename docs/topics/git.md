@@ -6,6 +6,8 @@ comment: true
 
 ### 개념
 
+---
+
 [👉 patch-id는 무엇일까?](/notes/git-what-is-patch-id/)
 [👉 rebase가 동작하는 원리](/notes/git-how-rebase-works/)
 
