@@ -25,7 +25,7 @@ comment: true
 
 ### 문제 상황
 
-1. **[feature-a → main]** feature-a 브랜치가 리뷰 후 수정사항과 함께 main에 머지됨 (아래와 같은 상태)
+1. **[feature-a → main]** feature-a 브랜치가 리뷰 후 `A-1 commit` 수정사항과 함께 main에 머지됨 (아래와 같은 상태)
 
 ```mermaid
     gitGraph
@@ -35,15 +35,16 @@ comment: true
     branch feature-b
     commit id: "B commit"
     commit id: "B-1 commit"
+    checkout feature-a
+    commit id: "A-1 commit"
     checkout main
     merge feature-a
 
 ```
 
 2. **[feature-b → main]** feature-b 브랜치 PR을 오픈하기 위해 main을 rebase 해야됨
-3. **[feature-b → main]** feature-b는 feature-a에서 파생된 브랜치여서 main에 rebase시 feature-a의 변경사항도 같이 적용하게 된다.
-   - `A commit`, `B commit`, `B-1 commit`
-4. **[feature-b → main]** feature-a의 리뷰중 수정사항이 main에 반영되었기 때문에 `A commit`를 반영하는 과정에서 충돌이 일어날 확률이 높다.
+3. **[feature-b → main]** feature-b는 feature-a에서 파생된 브랜치여서 main에 rebase시 feature-a의 변경사항도 같이 적용하게 된다. (`A commit`, `B commit`, `B-1 commit`)
+4. **[feature-b → main]** 이 과정에서 main에 머지된 `A-1 commit`과 feature-b의 `A commit`이 충돌이 일어날 확률이 높다.
 
 ### 해결 방법: rebase --onto 활용
 
@@ -67,7 +68,7 @@ git rebase --onto main feature-a feature-b
 
 라는 의미이다. 이를 통해 이미 main에 병합된 feature-a의 변경사항이 중복 적용되는 것을 방지할 수 있고, feature-a에서 수정사항이 있어도 feature-b 브랜치의 변경사항만 적용되기 때문에 충돌이 일어날 가능성을 줄일 수 있다.
 
-즉, 앞에 3번 과정이 아래와 같이 적용된다
+즉, 앞에 3~4번 과정이 아래와 같이 적용된다
 
 3. **[feature-b → main]** feature-b는 feature-a 이후 feature-b까지의 변경사항만 rebase에 적용한다.
    - `B commit`, `B-1 commit`
@@ -79,6 +80,8 @@ git rebase --onto main feature-a feature-b
     commit id: "main commit"
     branch feature-a
     commit id: "A commit"
+    checkout feature-a
+    commit id: "A-1 commit"
     checkout main
     merge feature-a
     branch feature-b
