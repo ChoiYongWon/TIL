@@ -1,0 +1,20 @@
+---
+permalink: /notes/2024-manage-github-accounts-in-local-env/
+comment: true
+---
+
+# 하나의 로컬 환경에서 여러 Github 계정 관리하기
+
+1. `gh auth setup-git` 명령어를 실행 → git credential를 git cli가 관리
+2. `gh auth login` 로 등록할 계정을 로그인 (로그인을 하면 토큰 정보가 키체인에 저장된다)
+3. 이 후, ~/.config/gh/hosts.yml 파일 내에 로그인 아이디들이 저장되어 있을것이다.
+4. gh 자체적으로도 `gh auth switch` 명령어를 통해 계정간 이동을 할 수 있지만 이는 credential 정보(oauth_token)만 바꿔줄 뿐, git config 내에 저장되어있는 user.name이나 user.email 등은 바꿔주지 않는다. [관련 링크](https://github.com/cli/cli/blob/trunk/docs/multiple-accounts.md#what-is-out-of-scope-for-this-release)
+5. 아래와 같이 입력하면 모든 정보가 바뀐다.
+
+```sh
+git config --global user.name ${{username}}
+git config --global user.email ${{email}}
+gh auth switch -u ${{username}}
+```
+
+6. [autoenv](https://github.com/hyperupcall/autoenv)를 사용하여 특정 폴더에 진입했을 때 자동으로 계정을 변경하는 방법도 가능하다.

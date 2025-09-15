@@ -1,0 +1,53 @@
+---
+permalink: /notes/2024-how-react-lane-works-internally/
+comment: true
+---
+
+# React Lane은 내부적으로 어떻게 동작할까?
+
+Lane은 React에서 관리하는 비트 단위의 우선순위로 32개(0~31)로 이루어져있다.
+
+```ts
+// Lane values below should be kept in sync with getLabelForLane(), used by react-devtools-timeline.
+// If those values are changed that package should be rebuilt and redeployed.
+export const TotalLanes = 31;
+export const NoLanes: Lanes = /*                        */ 0b0000000000000000000000000000000;
+export const NoLane: Lane = /*                          */ 0b0000000000000000000000000000000;
+export const SyncLane: Lane = /*                        */ 0b0000000000000000000000000000001;
+export const InputContinuousHydrationLane: Lane = /*    */ 0b0000000000000000000000000000010;
+export const InputContinuousLane: Lanes = /*            */ 0b0000000000000000000000000000100;
+export const DefaultHydrationLane: Lane = /*            */ 0b0000000000000000000000000001000;
+export const DefaultLane: Lanes = /*                    */ 0b0000000000000000000000000010000;
+const TransitionHydrationLane: Lane = /*                */ 0b0000000000000000000000000100000;
+const TransitionLanes: Lanes = /*                       */ 0b0000000001111111111111111000000;
+const TransitionLane1: Lane = /*                        */ 0b0000000000000000000000001000000;
+const TransitionLane2: Lane = /*                        */ 0b0000000000000000000000010000000;
+const TransitionLane3: Lane = /*                        */ 0b0000000000000000000000100000000;
+const TransitionLane4: Lane = /*                        */ 0b0000000000000000000001000000000;
+const TransitionLane5: Lane = /*                        */ 0b0000000000000000000010000000000;
+const TransitionLane6: Lane = /*                        */ 0b0000000000000000000100000000000;
+const TransitionLane7: Lane = /*                        */ 0b0000000000000000001000000000000;
+const TransitionLane8: Lane = /*                        */ 0b0000000000000000010000000000000;
+const TransitionLane9: Lane = /*                        */ 0b0000000000000000100000000000000;
+const TransitionLane10: Lane = /*                       */ 0b0000000000000001000000000000000;
+const TransitionLane11: Lane = /*                       */ 0b0000000000000010000000000000000;
+const TransitionLane12: Lane = /*                       */ 0b0000000000000100000000000000000;
+const TransitionLane13: Lane = /*                       */ 0b0000000000001000000000000000000;
+const TransitionLane14: Lane = /*                       */ 0b0000000000010000000000000000000;
+const TransitionLane15: Lane = /*                       */ 0b0000000000100000000000000000000;
+const TransitionLane16: Lane = /*                       */ 0b0000000001000000000000000000000;
+const RetryLanes: Lanes = /*                            */ 0b0000111110000000000000000000000;
+const RetryLane1: Lane = /*                             */ 0b0000000010000000000000000000000;
+const RetryLane2: Lane = /*                             */ 0b0000000100000000000000000000000;
+const RetryLane3: Lane = /*                             */ 0b0000001000000000000000000000000;
+const RetryLane4: Lane = /*                             */ 0b0000010000000000000000000000000;
+const RetryLane5: Lane = /*                             */ 0b0000100000000000000000000000000;
+export const SomeRetryLane: Lane = RetryLane1;
+export const SelectiveHydrationLane: Lane = /*          */ 0b0001000000000000000000000000000;
+const NonIdleLanes = /*                                 */ 0b0001111111111111111111111111111;
+export const IdleHydrationLane: Lane = /*               */ 0b0010000000000000000000000000000;
+export const IdleLane: Lanes = /*                       */ 0b0100000000000000000000000000000;
+export const OffscreenLane: Lane = /*                   */ 0b1000000000000000000000000000000;
+```
+
+Lane은 Fiber의 우선순위를 가르키고 있으며 Fiber에서 관리한다. Fiber는 본인의 Lane과 자식들의 Lane(ChildLane)정보를 가지고 있다. React는 렌더링 재조정 과정에서 우선순위가 높은 Fiber를 우선적으로 렌더링한다. 대부분 업데이트는 1번 우선순위인 Sync Lane이고 개발자가 useTransition이나 useDeferredValue 등을 이용해서 우선순위를 설정할 수 있다. Fiber가 상태 변화로 Lane이 설정될 때, 해당 Lane은 부모 Fiber의 ChildLane에 비트 | 연산으로 합쳐진다. 리렌더링 과정에서 React는 Root의 childLane을 확인하고 우선순위가 가장 높은 lane부터 처리한다. lane을 통해 어느 자식을 리렌더링 해야될지 알게되는데 Root부터 childLane을 검사해 자식 Fiber의 childLane을 각각 확인하여 렌더링해야되는 Fiber인지 알게된다. React는 한번의 렌더링 사이클 (render phase + commit phase)당 하나의 Lane을 처리할 수 있고 이런식으로 우선순위가 높은 Lane부터 하나씩 처리하게 된다.
